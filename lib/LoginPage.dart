@@ -151,6 +151,7 @@ void TestRetriveData() {
 
 void onSignInComplete(BuildContext context, bool admin) {
   showLoadingScreen(context, msg: "Signin successful! Loading Data");
+
   getCollection(booksCollectionDB, (data) {
     hideLoadingScreen(context);
     List<LMBook> bookList = List.empty(growable: true);

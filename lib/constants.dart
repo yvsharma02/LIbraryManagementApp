@@ -36,7 +36,10 @@ const double signUpButtonX = 12.5;
 const double signUpButtonY = signUpButtonX * aspectRatio * 2.8;
 
 const double alertBoxWidth = 25;
-const double alertBoxHeight = alertBoxWidth * aspectRatio * 1.25;
+const double alertBoxHeight = alertBoxWidth * aspectRatio;
+
+// percetange of width.
+const double circularLoadingIndictorRadius = 25;
 
 const double googleSignInX = 12.5;
 const double googleSignInY = googleSignInX * aspectRatio * 3.3;

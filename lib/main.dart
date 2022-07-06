@@ -9,7 +9,6 @@ import 'LMButton.dart';
 
 void main() {
   runApp(const LibraryManagementApp());
-  InitialiseHandlers();
 }
 
 class LibraryManagementApp extends StatefulWidget {
@@ -27,8 +26,10 @@ class _LibraryManagementAppState extends State<LibraryManagementApp> {
     try {
       var app = await Firebase.initializeApp();
       setState(() {
-        if (!app.name.isEmpty)
+        if (!app.name.isEmpty) {
           initialized = true;
+          InitialiseHandlers();
+        }
         else
           error = true;
       });

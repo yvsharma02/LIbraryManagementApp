@@ -1,16 +1,20 @@
-# library_management_app
+# Library Management App
 
-A new Flutter project.
+A library management app, made for the requitements for Students Union Technical Team (SUTT), BITS Pilani, Pilani Campus.
+The App was made using Flutter with Firebase.
 
-## Getting Started
+The app consists of two sections:
+Students and Admin.
 
-This project is a starting point for a Flutter application.
+In the students section, students can see the list of all books, their status, and issue or return them.
+The admin can see the list of all books and their status, but cannot issue them. Altough they can add or remove new books.
 
-A few resources to get you started if this is your first Flutter project:
+Logo used in background is of Students Union Techincal Team.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Admin Page            |  User Page
+:-------------------------:|:-------------------------:
+![](https://i.imgur.com/rekGfWp.jpg)  |  ![](https://i.imgur.com/SDMKzaK.jpg)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Home Page          |  Student Login Page
+:-------------------------:|:-------------------------:
+![](https://i.imgur.com/gYgQhMB.jpg)  |  ![](https://imgur.com/fK7ez3m.jpg)

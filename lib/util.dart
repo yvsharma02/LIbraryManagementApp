@@ -47,13 +47,20 @@ void showLoadingScreen(BuildContext context, {msg = "Loading"}) {
   showDialog(
       context: context,
       builder: (ctx) {
-        return AlertDialog(
-            title: Center(child: Text(msg)),
-            content: SizedBox(
-                height:
-                    scaleHeight(context, alertBoxHeight, scaleWithWidth: true),
-                width: scaleWidth(context, alertBoxWidth),
-                child: CircularProgressIndicator()));
+        return SizedBox(
+            height: scaleHeight(context, alertBoxHeight),
+            width: scaleWidth(context, alertBoxWidth),
+            child: AlertDialog(
+                title: Center(child: Text(msg)),
+                content: 
+                    SizedBox(
+                        height:
+                            scaleHeight(context, circularLoadingIndictorRadius),
+                        width:
+                            scaleHeight(context, circularLoadingIndictorRadius),
+                        child: Center(
+                          child: CircularProgressIndicator(),
+                        ))));
       });
 }
 
